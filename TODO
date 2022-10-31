@@ -7,13 +7,13 @@ Todo:
   ☐ button hover transitions
   ☐ icons on buttons
   ☐ update massage training sessions
-  ☐ studios collection lookup or whatever
-  ☐ email -> fierbase mail -> need google mail data -> + 💩 blaze plan
+  ✔ studios collection lookup or whatever @done(31-10-22 17:27)
+  ☐ email -> firebase mail -> need google mail data -> + 💩 blaze plan
   ☐ or chase up sendgrid emails?? free tier...through netlify functions
   ☐ style modal
     ☐ modal dims background
-  ☐ netlify - seems to be down :sad
-  ☐ map/filter/reduce!
+  ✔ netlify - seems to be down :sad @done(31-10-22 17:27)
+  ✔ map/filter/reduce! @done(31-10-22 17:27)
   ✔ get Studios @done(31-10-22 16:09)
   ✔ no gallery - use images elsewhere @done(31-10-22 15:59)
   ✔ workshop/training modal @done(31-10-22 15:23)
@@ -48,6 +48,7 @@ firestore:
   ☐ backend for lots of things!
     ☐ add workshops
   ☐ data structures for workshops?
+    ☐ change time from timedate to human friendly strings
   ✔ get all yogashops.js @done(31-10-22 14:04)
   ☐ get simple CRUD
     ☐ create

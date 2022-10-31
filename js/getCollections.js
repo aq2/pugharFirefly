@@ -20,19 +20,23 @@
 
 
 //
-/// get Yoga shops
-
-  export let aymShops = []
-  let snapshot = await getDocs(collection(db, "yogaWorkshops"))
-  snapshot.forEach((doc) => {
-    aymShops.push({ ...doc.data(), id: doc.id })
-  })
+/// get aym shops
 
   export let studios = []
-  snapshot = await getDocs(collection(db, "studios"))
-  snapshot.forEach((doc) => {
-    studios.push({ ...doc.data(), id: doc.id })
+  let snapshot = await getDocs(collection(db, "studios"))
+    snapshot.forEach((studio) => {
+    studios.push({ ...studio.data(), id: studio.id })
   })
+
+  export let aymShops = []
+  snapshot = await getDocs(collection(db, "aymShops"))
+  snapshot.forEach((shop) => {
+    let studio = studios.filter(stud => stud.id == shop.data().location)[0]
+    aymShops.push({ ...shop.data(), id: shop.id, studio: studio })
+  })
+
+  console.table(aymShops)
+  console.log(aymShops[0].studio.mapRef)
 
 
 //
