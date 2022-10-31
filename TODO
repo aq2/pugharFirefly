@@ -10,7 +10,9 @@ Todo:
   ☐ studios collection lookup or whatever
   ☐ email
   ☐ style modal
+    ☐ modal dims background
   ☐ netlify - seems to be down :sad
+  ✔ no gallery - use images elsewhere @done(31-10-22 15:59)
   ✔ workshop/training modal @done(31-10-22 15:23)
   ✔ new repo - pugharfirefly! @done(31-10-22 14:37)
   ✔ 💡 firepughar compile structure! @done(31-10-22 11:13)
@@ -39,6 +41,7 @@ meeja queeries:
 //
 
 firestore:
+  ☐ need to do lookups for studios, based on ID - but where
   ☐ backend for lots of things!
     ☐ add workshops
   ☐ data structures for workshops?
