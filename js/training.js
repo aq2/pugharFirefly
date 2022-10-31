@@ -1,23 +1,14 @@
-// get all workshops and studios!
-import { aymShops } from './getCollections.js'
+import { aymShops, studios } from './getCollections.js'
 import { $, $all, $log, $show, $hide } from './aQuery.js'
-// console.log(allYogaShops)
-
 
 const aymsTable = $('#aymShops')
 
-
 if (aymShops.length == 0) {
   console.log('nope')
-  insertRow('to be announced')
+  insertRow(aymsTable, 'to be announced')
 }
 
-function insertRow(content) {
-  var row = aymsTable.insertRow()
-  var cell = row.insertCell(0)
-  cell.innerHTML = content
-}
-
+// add table row for each shop
 aymShops.forEach((shop,idx) => {
   let content = shop.date
   content += '<br>'
@@ -26,7 +17,7 @@ aymShops.forEach((shop,idx) => {
   content += '<button '
   content += 'id=b' + idx + " class='yoga'" 
   content += '>more info</button>'
-  insertRow(content)
+  insertRow(aymsTable, content)
 })
 
 // add click handlers to buttons
@@ -38,20 +29,25 @@ buttons.forEach(button => {
   })
 })
 
+// insert content into new table row
+function insertRow(table, content) {
+  var row = table.insertRow()
+  var cell = row.insertCell(0)
+  cell.innerHTML = content
+}
+
+
 function buildWorkshopDetails(shop) {
   // $log(shop)
-  // gonna have to populate a modal with workshop details!
+  // $log(studios)
 
-  // first get a modal 'popup'
   const modal = $('#modal')
-  modal.classList.add('active')
-  $log(modal)
+  $show(modal)
   modal.children[0].innerHTML = 'AYM Workshop Details'
   modal.children[1].innerHTML = shop.location
   // etc
 
   $('#modalOK').addEventListener('click', (b) => {
-    $log('hide modal')
     $hide(modal)
   })
 }

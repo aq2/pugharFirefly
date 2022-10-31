@@ -23,10 +23,17 @@
 /// get Yoga shops
 
   export let aymShops = []
-  const snapshot = await getDocs(collection(db, "yogaWorkshops"))
+  let snapshot = await getDocs(collection(db, "yogaWorkshops"))
   snapshot.forEach((doc) => {
     aymShops.push({ ...doc.data(), id: doc.id })
   })
+
+  export let studios = []
+  snapshot = await getDocs(collection(db, "studios"))
+  snapshot.forEach((doc) => {
+    studios.push({ ...doc.data(), id: doc.id })
+  })
+
 
 //
 /// maybe
