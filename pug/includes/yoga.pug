@@ -1,0 +1,134 @@
+h3.accordion_heading(rel="yoga") Yoga Classes
+
+#yoga.tab_content
+
+  div
+    h2 Sivananda Yoga
+    .left50
+      p.
+        Sivananda Yoga is a classical and holistic approach to Hatha Yoga that stretches and tones
+        the whole body.
+      p.
+        This style of yoga has not been modified or watered down. The teachings have survived intact
+        and are practiced as originally presented in India by Swami Sivananda in 1936. Sivananda Yoga
+        is an international practice which follows the same format worldwide.
+      p.
+        Sivananda Yoga is a complete healing system designed to help the body maintain a natural
+        healthy state. It was developed by Vishnu-Devananda who wrote one of the contemporary Yoga
+        classics, <i>The Complete Illustrated Book of Yoga</i>, first published in 1960 and still one
+        of the best introductions to yoga available.
+
+    .right50
+      p Sivananda training involves frequent relaxation and emphasizes full, yogic breathing.
+
+      p Five principles of yoga - by Swami Vishnu-Devananda
+      ul
+        li Proper Exercise – Asanas (steady poses)
+        li Proper Breathing – Pranayama (prana, or vital energy)
+        li Proper Relaxation – Savasana (pose for maximum relaxation)
+        li Proper Diet – Vegetarian (lacto or vegan)
+        li Meditation and Prayer – Dhyana and Vedanta (True Knowledge)
+
+
+  div
+    h2 Sivananda Yoga Classes
+
+    .left50
+      h4 Weekly Yoga classes - return of Live Classes!
+      p I now run both 'real live' and online weekly yoga classes.
+      p Live classes are at the Feoffee Centre, Ottery St Mary on Thursdays, starting from September 2022.
+      p Online classes on Tuesdays, via Zoom.
+      p All are welcome, at any level of experience. Come along and try two free sessions with no commitment!
+      p If you want to try free sessions, please <a href='mailto:saghar@ayurvedicyogamassage.org.uk'>email me for Zoom login details</a>.
+
+      table.wide
+        thead.thead
+          tr
+            th.thead(colspan=2) Online Yoga classes
+        tbody
+          tr
+            td Tuesdays, online 5-6pm
+          //- tr
+          //-   td Exeter,<br>derekthedog yoga studio,<br>Queen Street
+          //-   td Mondays,<br>1-2 pm
+          //- tr
+          //-   td Ottery St Mary,<br>Feoffee centre,<br>Brook Street
+          //-   td Thursdays,<br>6-7 pm
+
+      table.wide
+        thead.thead
+          tr
+            th.thead(colspan=2) Live Yoga classes
+        tbody
+          //- tr
+          //-   td Thursdays, 5.30-6.30pm
+          //- tr
+          //-   td Exeter,<br>derekthedog yoga studio,<br>Queen Street
+          //-   td Mondays,<br>1-2 pm
+          tr
+            td Ottery St Mary,<br>Feoffee centre,<br>Brook Street
+            td Thursdays,<br>5.30 - 6.30pm
+
+      h4 Prices
+      //- p First two classes are free!
+      p Single Class £8 each (hourly session)
+        //- <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        //-   <input type="hidden" name="cmd" value="_s-xclick">
+        //-   <input type="hidden" name="hosted_button_id" value="43KLLNELDUZ24">
+        //-   <input type="image" src="https://www.paypalobjects.com/en_US/GB/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+        //-   <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+        //- </form>
+
+      p Monthly payment £30
+      // p Monthly payment £30 plus 10% discount on all workshops!
+      
+      form(method='post' action='./../../php/processYogaClassesForm.php' onsubmit='return validate(this)')
+        p.
+          To pay for yoga classes, please fill out the following form, and I'll get back to you as soon as I can with Zoom login details.
+        fieldset
+          p Your details
+          div
+            input.name(type='text' name='name' placeholder='Your name' autocomplete='off' required autofocus)
+          div
+            input.tel(type='tel' name='tel' placeholder='Your phone number' autocomplete='off' required)
+          div
+            input.email(type='email' name='email' placeholder='Your email address' required)
+          div
+            select.tickets(name='tickets' required)
+              option(value='single_class') Single class: &nbsp;&pound;8
+              option(value='monthly_class') Month of classes: &nbsp;&pound;30
+
+          //- css hidden honeypot - only automated spammers will see this and attempt to fill
+          div
+            input.website(type='text' name='website' autocomplete='off')
+
+          div
+            input(name='subject' type='hidden' value='yoga class')
+            input(type='submit' value='Continue to PayPal' name='submit')
+
+
+      script(src='../../js/validators.js')
+
+      script.
+        function validate(form) {
+          let failMessage = validateName(form.name.value)
+                          + validatePhone(form.tel.value)
+                          + validateEmail(form.email.value)
+
+          return check4fail(failMessage)
+        }
+
+    .right50
+      //- h4 Yoga for kids
+      //- p I have a weekly fun yoga for kids session during school term times in Ottery St Mary.
+      //- //- p Currently suspended for summer holidays, sessions start again September 5th 2019.
+      //- table.wide
+      //-   thead
+      //-     tr
+      //-       th(colspan=2 class='thead') Yoga classes for kids
+      //-   tbody
+      //-     tr
+      //-       //- td Ottery St Mary,<br>Feoffee centre,<br>Brook Street
+      //-       //- td Thursdays,<br>4.45-5.30pm
+      //-       td currently suspended until things get back to normal
+

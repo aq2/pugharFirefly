@@ -1,0 +1,44 @@
+h3.accordion_heading.last_acc(rel='contact') Contact
+
+#contact.tab_content
+  h2 Contact details
+  .left50
+    form(name='wksh' method='post' action='php/processContactForm.php' onsubmit='return validate(this)')
+      p Fill out the form to send me a message.<br>I'll reply as soon as I can.
+      fieldset
+        br
+        div
+          input.name(type='text' name='name' placeholder='Your name' autocomplete='off' required autofocus)
+        div
+          input.email(type='email' name='email' placeholder='Your email address' required)
+        div
+          textarea.message(name='message' rows=3 cols=30 placeholder='write me a message...' autocomplete='off' required)
+
+        //- css hidden honeypot - only automated spammers will see this and attempt to fill
+        div
+          input.website(type='text' name='website' autocomplete='off')
+
+        div
+          input(type='hidden' name='subject' value='Contact form on website')
+          input(type='submit' value='send' name='button')
+
+  .right50.contact_right
+    img(src='images/lotus.jpg')
+    p mobile: 07974 470 610
+    p Neal's Yard, Exeter: 01392 438127
+    p.email
+      a(href='mailto:saghar_amozgar@hotmail.com') saghar_amozgar@hotmail.com
+
+
+  //- script(src='../js/validators.js')
+
+  script.
+    function validate(form) {
+      let failMessage = validateName(form.name.value)
+                      + validateEmail(form.email.value)
+                      + validateMessage(form.message.value)
+                      + check4links(form.message.value)
+
+      return check4fail(failMessage)
+    }
+

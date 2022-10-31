@@ -1,0 +1,315 @@
+body {
+  color: #fff;
+  background: #000;
+}
+header {
+  background: #000;
+}
+header h1 {
+  color: #fef8e7;
+}
+nav {
+  color: #072966;
+  background: #bd900a;
+}
+nav .tab.active {
+  color: #000;
+  background: #fef8e7;
+}
+section {
+  color: #000;
+  background: #fef8e7;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+}
+aside {
+  width: 25%;
+}
+main {
+  display: flex;
+}
+aside img {
+  width: 100%;
+}
+header {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  margin: 0 auto;
+  text-align: center;
+}
+header img {
+  max-height: 150px;
+  margin: 0 5rem;
+}
+nav {
+  top: 0px;
+  position: sticky;
+  z-index: 5;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+section {
+  opacity: 0;
+  display: none;
+  padding: 1rem 2rem;
+  transition: opacity 2s;
+  justify-content: space-between;
+  width: 75%;
+}
+section.active {
+  animation-name: opac;
+  display: inline-block;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+article {
+  display: flex;
+}
+.half {
+  width: 48%;
+  margin: 1rem;
+}
+.spacer {
+  min-width: 3rem;
+}
+.pic {
+  text-align: right;
+}
+.pic img {
+  width: 200px;
+}
+.pic a img {
+  height: 45px;
+  width: 45px;
+}
+.right {
+  right: 0;
+  margin-right: -20px;
+  position: absolute;
+}
+button {
+  color: #072966;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  background: #bd900a;
+  border: 2px solid #731c25;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav .tab {
+  flex-grow: 1;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid #ffa500;
+}
+body {
+  font-family: 'Mulish', sans-serif;
+}
+h1,
+h2,
+h3,
+.tab {
+  font-family: 'Philosopher', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  width: 100%;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+h2.title {
+  text-align: center;
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+nav .tab {
+  font-size: 2.5rem;
+}
+p,
+li {
+  line-height: 1.3;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+li {
+  margin-bottom: 0;
+}
+ul {
+  margin-left: 15rem;
+  margin-top: -2.65rem;
+  display: inline-block;
+}
+th {
+  font-size: 1.5rem;
+}
+td {
+  font-size: 1.33rem;
+}
+a {
+  text-decoration: none;
+}
+blockquote {
+  width: 80%;
+  position: relative;
+  border-radius: 1rem;
+  padding: 0.25rem 1rem;
+  margin: 1rem auto 1.5rem auto;
+  background: rgba(189,144,10,0.5);
+  border-left: 15px solid #bd900a;
+}
+span.quote {
+  left: 1rem;
+  top: -0.5rem;
+  font-size: 7rem;
+  position: absolute;
+  font-family: sans-serif;
+}
+.testimonial {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.punter {
+  text-align: right;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+table {
+  border-collapse: collapse;
+  border: 4px solid #731c25;
+  border-spacing: 0;
+  border-bottom: 18px solid $tablehead;
+  width: 85%;
+  margin: 0 auto 1em auto;
+  font-size: 1.25rem;
+}
+th,
+td {
+  padding: 0.5em 1em;
+  color: $contenttext;
+  border-collapse: collapse;
+  border: 1px solid #731c25;
+}
+th {
+  color: #fef8e7;
+  background: #731c25;
+}
+th.last {
+  border-right: none;
+}
+@-moz-keyframes headingDown {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+@-webkit-keyframes headingDown {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+@-o-keyframes headingDown {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+@keyframes headingDown {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+@-moz-keyframes headingUp {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+@-webkit-keyframes headingUp {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+@-o-keyframes headingUp {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+@keyframes headingUp {
+  0% {
+    top: 200px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+@-moz-keyframes opac {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes opac {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes opac {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes opac {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

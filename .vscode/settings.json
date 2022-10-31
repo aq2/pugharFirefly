@@ -1,0 +1,15 @@
+{
+  "compile-hero.disable-compile-files-on-did-save-code": false,
+  "compile-hero.pug-output-directory": "../",
+  "compile-hero.stylus-output-directory": "../",
+  "compile-hero.javascript-output-directory": "../dist/js",
+  "compile-hero.typescript-output-toggle": false,
+  "compile-hero.typescriptx-output-toggle": false,
+  "compile-hero.ignore": "*/includes/*",
+  "liveServer.settings.root": "dist/",
+  "compile-hero.javascript-output-toggle": false,
+  "compile-hero.jade-output-toggle": false,
+  "compile-hero.less-output-toggle": false,
+  "compile-hero.sass-output-toggle": false,
+  "compile-hero.scss-output-toggle": false,
+}

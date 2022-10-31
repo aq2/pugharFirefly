@@ -1,0 +1,106 @@
+* new pughar js! *
+==================
+
+Todo:
+  ✔ bigger side images @done(31-10-22 14:11)
+  ☐ treatments layout
+  ☐ button hover transitions
+  ☐ icons on buttons
+  ☐ update massage training sessions
+  ☐ workshop/training modal
+  ✔ 💡 firepughar compile structure! @done(31-10-22 11:13)
+  ✘ hide firebase config?? @cancelled(31-10-22 13:11)
+  ✔ learn modules import/export malarkey @done(31-10-22 12:42)
+  ☐ studios collection lookup or whatever
+  ☐ email
+  ✔ radical redesign @done(31-10-22 11:46)
+  ✔ tweak radical @done(31-10-22 11:47)
+  ☐ new repo and netlify
+
+
+//
+scroller:
+  ✔ position section on switch @done(31-10-22 11:14)
+  ☐ scrolling still raggedy
+  ☐ why is aside not sticking?
+  ☐ change scroll speeds of aside
+  ✘ fuck scrolling - just start it small in first place! @cancelled(31-10-22 11:13)
+
+//
+
+meeja queeries:
+  ☐ portrait mode accordion!
+    ☐ do we _even_ need?
+    ☐ try 'copying' from old jquery doodah - _be inspired_ - *semantic*
+  
+//
+
+firestore:
+  ☐ backend for lots of things!
+    ☐ add workshops
+  ☐ data structures for workshops?
+  ✔ get all yogashops.js @done(31-10-22 14:04)
+  ☐ get simple CRUD
+    ☐ create
+    ☐ update
+    ☐ delete  
+    ☐ for workshops
+    
+//
+one day:
+  ☐ do timetrade substitute
+  ☐ netlify -> namecheap? -< 👋 vidahost
+  ☐ header img gallery slider/carousel
+  ☐ fancier intro animations?
+  ☐ bring back the om!
+
+================================================
+
+Archive:
+  ✔ get it working! - clap yourself on the back 😺 @done(30-10-22 17:24) @project(firestore)
+  ✔ await @done(30-10-22 17:21) @project(firestore)
+  ✔ back to pug includes? needs the old 1,2, but neater code! @done(30-10-22 16:26) @project(Todo)
+  ✔ 💩 blackness -> have a black header, and put hero/headline in a div inside header... @done(30-10-22 17:57) @project(scroller)
+  ✔ read @done(30-10-22 15:52) @project(firestore)
+  ✔ 💡 timetrade?? => needs db -> netlify, firebase? @done(30-10-22 15:52) @project(one day)
+  ✔ 💡 use same id/class name => 😺💡 @done(28-10-22 23:59) @project(tabs)
+  ✔ 💡 fade-ins @done(28-10-22 20:15) @project(tabs)
+  ✔ intro animations @done(28-10-22 20:12) @project(Todo)
+  ✔ padding on container, margin on content -> typog? @done(28-10-22 14:36) @project(Todo)
+  ✔ favicon @done(28-10-22 20:10) @project(Todo)
+  ✔ call it 'app.js', like a proper _dev_ @done(28-10-22 20:11) @project(Todo)
+  ✔ recrop hero right-side! @done(28-10-22 18:35) @project(scroller)
+  ✔ 💡 sticky shrinking header onscroll down! @done(28-10-22 12:05) @project(scroller)
+  ✔ z-indices? @done(28-10-22 16:29) @project(Todo)
+  ✔ no moar includes -> no 'compiling one-two' @done(28-10-22 19:36) @project(Todo)
+  ✔ why the shift when switching tab? -> scrollbar appears! @done(28-10-22 16:22) @project(tabs)
+  ✔ going to have to chose initial tab @done(28-10-22 16:19) @project(tabs)
+  ✔ does nav have to be a ul? what else? -> .tab @done(28-10-22 15:55) @project(Todo)
+  ✔ 💩 clunky 'blackness' div @done(28-10-22 20:11) @project(scroller)
+  ✔ clickhandlers on tabs to toggle .active data id's? @done(28-10-22 15:55) @project(tabs)
+  ✔ move title up on scroll @done(28-10-22 12:34) @project(scroller)
+  ✔ take out the om @done(28-10-22 12:04) @project(scroller)
+  ✘ try ordering article elements, and adjust top @cancelled(28-10-22 12:05) @project(Todo)
+  ✔ aint getting da clicks? @done(28-10-22 14:35) @project(Todo)
+  ✘ header glow on scroll @cancelled(28-10-22 12:04) @project(scroller)
+  ✔ get 'em working @done(28-10-22 20:15) @project(tabs)
+  ✔ position relative @done(27-10-22 19:44) @project(Todo)
+  ✘ gsap too much? we just want simple stuff for now! @cancelled(27-10-22 18:04) @project(layout => structure of *blocks* - not _text_)
+  ✔ eventhandling debounce throttling @done(27-10-22 19:13) @project(layout => structure of *blocks* - not _text_)
+  ✘ h1 positioning and sizing! top left @cancelled(27-10-22 19:46) @project(meeja queeries)
+  ✔ welcome -> include, then include it in index! - resave parent? @done(27-10-22 12:34) @project(Todo)
+  ✔ could always resave parent => compile 😄 @done(27-10-22 12:34) @project(Todo)
+  ✘ => - or just fold them? @cancelled(27-10-22 12:34) @project(Todo)
+  ✔ extend aQuery => $hide() $show() etc @done(27-10-22 19:45) @project(Todo)
+  ✔ don't use imports in stylus, coz parent-save annoyance - just fold... @done(27-10-22 12:33) @project(setup and config)
+  ✘ use separate style and css files - no compile needed @cancelled(27-10-22 12:34) @project(setup and config)
+  ✔ add aQuery from imogen @done(26-10-22 18:55) @project(Todo)
+  ✔ semantic tags -> section @done(26-10-22 19:00) @project(layout)
+  ✔ flexy nav @done(26-10-22 17:06) @project(layout)
+  ✔ positioning @done(26-10-22 17:07) @project(layout)
+  ✘ having js/pug/stylus in /src - too anal @cancelled(26-10-22 15:59) @project(setup and config)
+  ✔ live server @done(26-10-22 16:22) @project(setup and config)
+  ✔ test importing stylesheets @done(26-10-22 15:57) @project(setup and config)
+  ✔ rename www, so it's _hidden_ at the top -> dist?? @done(26-10-22 16:22) @project(setup and config)
+  ✔ set up vscode compile hero etc, file structures @done(26-10-22 15:32) @project(setup and config)
+  ✔ compile hero default vs workspace @done(26-10-22 16:22) @project(setup and config)

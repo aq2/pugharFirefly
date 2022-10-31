@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+  head
+    include includes/head.pug
+  body
+    header
+      img(src='imgs/om.png')
+      h1 Ayurvedic Yoga Massage
+      img(src='imgs/om.png')
+    nav
+        .tab#welcome Welcome
+        .tab#treatments Treatments
+        .tab#training Massage Training
+        .tab#yoga Yoga Classes
+        .tab#joyful Joyful Living
+        .tab#dosha Dosha Principles
+        //- .tab#gallery Gallery
+        .tab#contact Contact
+
+    main
+      aside
+        img(src='imgs/gall/gal1.jpg')
+        img(src='imgs/gall/gal2.jpg')
+
+      section.welcome
+        include includes/welcome.pug
+      section.treatments
+        include includes/treatments.pug
+      section.training
+        include includes/training.pug
+      section.yoga
+        //- include includes/yoga.pug
+      section.joyful
+        //- joyful
+      section.contact
+        //- include includes/contact.pug
+      section.dosha
+        //- dosha
+
+  script(src='js/app.js' type='module')
