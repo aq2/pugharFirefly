@@ -3,15 +3,14 @@
 
 Todo:
   ✔ bigger side images @done(31-10-22 14:11)
-  ☐ treatments layout
+  ☐ section layouts - use landscape imgs
   ☐ button hover transitions
   ☐ icons on buttons
-  ☐ update massage training sessions
-  ✔ studios collection lookup or whatever @done(31-10-22 17:27)
+  ☐ update workshops and training sessions to proper
   ☐ email -> firebase mail -> need google mail data -> + 💩 blaze plan
   ☐ or chase up sendgrid emails?? free tier...through netlify functions
-  ☐ style modal
-    ☐ modal dims background
+  ☐ style modal betterly
+    ✔ modal dims background @done(31-10-22 20:07)
   ✔ netlify - seems to be down :sad @done(31-10-22 17:27)
   ✔ map/filter/reduce! @done(31-10-22 17:27)
   ✔ get Studios @done(31-10-22 16:09)
@@ -44,17 +43,18 @@ meeja queeries:
 //
 
 firestore:
-  ☐ need to do lookups for studios, based on ID - but where
+  ✔ need to do lookups for studios, based on ID @done(31-10-22 17:27)
+  ☐ don't get expired shops -> date formats??
   ☐ backend for lots of things!
     ☐ add workshops
   ☐ data structures for workshops?
-    ☐ change time from timedate to human friendly strings
+    ✔ change time from timedate to human friendly strings @done(31-10-22 20:07)
   ✔ get all yogashops.js @done(31-10-22 14:04)
+
   ☐ get simple CRUD
     ☐ create
     ☐ update
     ☐ delete  
-    ☐ for workshops
     
 //
 one day:

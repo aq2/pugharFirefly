@@ -1,9 +1,8 @@
 import { aymShops, studios } from './getCollections.js'
 import { $, $all, $log, $show, $hide } from './aQuery.js'
 
-const modal = $('#modal-container')
-const modalContent = $('.content')
 const aymsTable = $('#aymShops')
+const modal = $('#modal-container')
 // 
 
 if (aymShops.length == 0) {
@@ -42,12 +41,8 @@ function insertRow(table, content) {
 
 
 function buildWorkshopDetails(shop) {
-  // $log(shop)
-  // $log(studios)
-
   $show(modal)
   $('#details').innerHTML = 'Ayurvedic Yoga Massage Workshop Details'
-  // modalContent.children[0].innerHTML = 'Ayurvedic Yoga Massage Workshop Details'
   
   $('#studioName').innerHTML = shop.studio.name
   $('#studioAddress').innerHTML = shop.studio.address
