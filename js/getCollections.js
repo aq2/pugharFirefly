@@ -17,21 +17,23 @@
 
   const app = initializeApp(firebaseConfig)
   const db = getFirestore(app)
-
+  // todo collection ref? 
 
 //
 /// get aym shops
 
   export let studios = []
   let snapshot = await getDocs(collection(db, "studios"))
-    snapshot.forEach((studio) => {
+  snapshot.forEach((studio) => {
     studios.push({ ...studio.data(), id: studio.id })
   })
 
   export let aymShops = []
   snapshot = await getDocs(collection(db, "aymShops"))
   snapshot.forEach((shop) => {
+    // studio 'lookup'
     let studio = studios.filter(stud => stud.id == shop.data().location)[0]
+    // insert studio details into shops array
     aymShops.push({ ...shop.data(), id: shop.id, studio: studio })
   })
 
