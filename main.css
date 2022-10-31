@@ -217,6 +217,20 @@ th {
 th.last {
   border-right: none;
 }
+#modal {
+  display: none;
+}
+#modal.active {
+  position: fixed;
+  top: 10vh;
+  left: 10vw;
+  display: inline-block;
+  background: #ffa500;
+  z-index: 5;
+  width: 80vw;
+  height: 80vh;
+  border: 2px solid #00f;
+}
 @-moz-keyframes headingDown {
   0% {
     top: -50px;

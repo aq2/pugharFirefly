@@ -22,10 +22,10 @@
 //
 /// get Yoga shops
 
-  export let allYogaShops = []
+  export let aymShops = []
   const snapshot = await getDocs(collection(db, "yogaWorkshops"))
   snapshot.forEach((doc) => {
-    allYogaShops.push({ ...doc.data(), id: doc.id })
+    aymShops.push({ ...doc.data(), id: doc.id })
   })
 
 //

@@ -46,6 +46,7 @@
   body
     margin 0 auto
     max-width 1920px
+    // display flex
   
   aside
     width 25%
@@ -267,3 +268,19 @@
     background $brown
     &.last
       border-right: none
+
+//
+//
+/// modal
+  #modal
+    display none
+    &.active
+      position fixed
+      top 10vh
+      left 10vw
+      display inline-block
+      background orange
+      z-index 5
+      width: 80vw;
+      height: 80vh;
+      border 2px solid blue

@@ -6,7 +6,7 @@
   "compile-hero.typescript-output-toggle": false,
   "compile-hero.typescriptx-output-toggle": false,
   "compile-hero.ignore": "*/includes/*",
-  "liveServer.settings.root": "dist/",
+  "liveServer.settings.root": "/",
   "compile-hero.javascript-output-toggle": false,
   "compile-hero.jade-output-toggle": false,
   "compile-hero.less-output-toggle": false,

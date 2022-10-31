@@ -7,11 +7,12 @@ Todo:
   ☐ button hover transitions
   ☐ icons on buttons
   ☐ update massage training sessions
-  ☐ workshop/training modal
   ☐ studios collection lookup or whatever
   ☐ email
-  ✔ new repo - pugharfirefly! @done(31-10-22 14:37)
+  ☐ style modal
   ☐ netlify - seems to be down :sad
+  ✔ workshop/training modal @done(31-10-22 15:23)
+  ✔ new repo - pugharfirefly! @done(31-10-22 14:37)
   ✔ 💡 firepughar compile structure! @done(31-10-22 11:13)
   ✘ hide firebase config?? @cancelled(31-10-22 13:11)
   ✔ learn modules import/export malarkey @done(31-10-22 12:42)
@@ -22,6 +23,7 @@ Todo:
 //
 scroller:
   ✔ position section on switch @done(31-10-22 11:14)
+  ☐ position fixed for header/nav?
   ☐ scrolling still raggedy
   ☐ why is aside not sticking?
   ☐ change scroll speeds of aside
@@ -51,9 +53,9 @@ firestore:
 one day:
   ☐ do timetrade substitute
   ☐ netlify -> namecheap? -< 👋 vidahost
-  ☐ header img gallery slider/carousel
+  ✘ header img gallery slider/carousel @cancelled(31-10-22 15:32)
   ☐ fancier intro animations?
-  ☐ bring back the om!
+  ✔ bring back the om! @done(31-10-22 15:32)
 
 ================================================
 
