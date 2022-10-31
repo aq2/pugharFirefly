@@ -36,12 +36,20 @@ html(lang="en")
       section.dosha
         //- dosha
 
-    #modal
-      // insert slots here
-      h1 love and peace
-      h2 location
-      .map map
 
-      button#modalOK OK
+    #modal-container
+      #modal-content
+        h1#details love and peace
+        .content
+          .half
+            h2#studioName location
+            p#studioAddress location
+            h2#date date
+            h2#time time
+            .map map
+          .half
+            p form goes here
+  
+        button#modalOK OK
   
   script(src='js/app.js' type='module')

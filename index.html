@@ -231,12 +231,23 @@
       <section class="contact"></section>
       <section class="dosha"></section>
     </main>
-    <div id="modal">
-      <!-- insert slots here-->
-      <h1>love and peace</h1>
-      <h2>location</h2>
-      <div class="map">map</div>
-      <button id="modalOK">OK</button>
+    <div id="modal-container">
+      <div id="modal-content">
+        <h1 id="details">love and peace</h1>
+        <div class="content">
+          <div class="half">
+            <h2 id="studioName">location</h2>
+            <p id="studioAddress">location</p>
+            <h2 id="date">date</h2>
+            <h2 id="time">time</h2>
+            <div class="map">map</div>
+          </div>
+          <div class="half">
+            <p>form goes here</p>
+          </div>
+        </div>
+        <button id="modalOK">OK</button>
+      </div>
     </div>
   </body>
   <script src="js/app.js" type="module"></script>

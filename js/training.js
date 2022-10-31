@@ -1,7 +1,8 @@
 import { aymShops, studios } from './getCollections.js'
 import { $, $all, $log, $show, $hide } from './aQuery.js'
 
-const modal = $('#modal')
+const modal = $('#modal-container')
+const modalContent = $('.content')
 const aymsTable = $('#aymShops')
 // 
 
@@ -12,9 +13,10 @@ if (aymShops.length == 0) {
 
 // add table row for each shop
 aymShops.forEach((shop,idx) => {
-  let content = shop.date
-  content += '<br>'
-  content += shop.location
+  let content = shop.studio.name
+  content += ', ' + shop.studio.town
+  content += '<br>' + shop.date
+  content += '<br>' + shop.time
   content += '<br>'
   content += '<button '
   content += 'id=b' + idx + " class='yoga'" 
@@ -44,8 +46,13 @@ function buildWorkshopDetails(shop) {
   // $log(studios)
 
   $show(modal)
-  modal.children[0].innerHTML = 'AYM Workshop Details'
-  modal.children[1].innerHTML = shop.location
+  $('#details').innerHTML = 'Ayurvedic Yoga Massage Workshop Details'
+  // modalContent.children[0].innerHTML = 'Ayurvedic Yoga Massage Workshop Details'
+  
+  $('#studioName').innerHTML = shop.studio.name
+  $('#studioAddress').innerHTML = shop.studio.address
+  $('#date').innerHTML = shop.date
+  $('#time').innerHTML = shop.time
   // etc
 
   $('#modalOK').addEventListener('click', (b) => {
