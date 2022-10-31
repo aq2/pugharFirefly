@@ -1,27 +1,27 @@
-import { aymShops, studios } from './getCollections.js'
+import { aymShops } from './getCollections.js'
 import { $, $all, $log, $show, $hide } from './aQuery.js'
 
 const aymsTable = $('#aymShops')
 const modal = $('#modal-container')
-// 
+
 
 if (aymShops.length == 0) {
-  $log('nope')
   insertRow(aymsTable, 'to be announced')
 }
 
+
 // add table row for each shop
 aymShops.forEach((shop,idx) => {
-  let content = shop.studio.name
-  content += ', ' + shop.studio.town
-  content += '<br>' + shop.date
-  content += '<br>' + shop.time
+  let content = ''
+  content += shop.studio.name + ', ' + shop.studio.town 
   content += '<br>'
-  content += '<button '
-  content += 'id=b' + idx + " class='yoga'" 
+  content += '<br>' + shop.date + ', ' + shop.time
+  content += '<br>'
+  content += "<button class='yoga' id=b" + idx
   content += '>more info</button>'
   insertRow(aymsTable, content)
 })
+
 
 // add click handlers to buttons
 const buttons = $all('button.yoga')
@@ -31,6 +31,7 @@ buttons.forEach(button => {
     buildWorkshopDetails(aymShops[index])
   })
 })
+
 
 // insert content into new table row
 function insertRow(table, content) {

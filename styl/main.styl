@@ -256,7 +256,7 @@
     border-spacing 0
     border-bottom 18px solid $tablehead
     // background $brown 
-    width 85%
+    // width 85%
     margin 0 auto 1em auto
     font-size 1.25rem
 
@@ -271,6 +271,10 @@
     background $brown
     &.last
       border-right: none
+
+
+  section.training table td
+    text-align center
 
 //
 //
@@ -298,6 +302,11 @@
     display flex
     flex-direction column
     justify-content space-between
+    // align-content center
 
   .content
     display flex
+  
+  button#modalOK
+    display inline-block
+    margin 0 auto

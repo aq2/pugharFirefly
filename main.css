@@ -200,7 +200,6 @@ table {
   border: 4px solid #731c25;
   border-spacing: 0;
   border-bottom: 18px solid $tablehead;
-  width: 85%;
   margin: 0 auto 1em auto;
   font-size: 1.25rem;
 }
@@ -217,6 +216,9 @@ th {
 }
 th.last {
   border-right: none;
+}
+section.training table td {
+  text-align: center;
 }
 #modal-container {
   display: none;
@@ -244,6 +246,10 @@ th.last {
 }
 .content {
   display: flex;
+}
+button#modalOK {
+  display: inline-block;
+  margin: 0 auto;
 }
 @-moz-keyframes headingDown {
   0% {
