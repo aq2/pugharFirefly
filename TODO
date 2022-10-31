@@ -8,7 +8,8 @@ Todo:
   ☐ icons on buttons
   ☐ update massage training sessions
   ☐ studios collection lookup or whatever
-  ☐ email
+  ☐ email -> fierbase mail -> need google mail data -> + 💩 blaze plan
+  ☐ or chase up sendgrid emails?? free tier...through netlify functions
   ☐ style modal
     ☐ modal dims background
   ☐ netlify - seems to be down :sad

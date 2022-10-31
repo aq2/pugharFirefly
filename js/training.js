@@ -1,10 +1,12 @@
 import { aymShops, studios } from './getCollections.js'
 import { $, $all, $log, $show, $hide } from './aQuery.js'
 
+const modal = $('#modal')
 const aymsTable = $('#aymShops')
+// 
 
 if (aymShops.length == 0) {
-  console.log('nope')
+  $log('nope')
   insertRow(aymsTable, 'to be announced')
 }
 
@@ -41,7 +43,6 @@ function buildWorkshopDetails(shop) {
   // $log(shop)
   // $log(studios)
 
-  const modal = $('#modal')
   $show(modal)
   modal.children[0].innerHTML = 'AYM Workshop Details'
   modal.children[1].innerHTML = shop.location
