@@ -76,6 +76,7 @@ section.active {
 }
 article {
   display: flex;
+  padding-bottom: 1.5rem;
 }
 .half {
   width: 48%;
@@ -88,7 +89,8 @@ article {
   text-align: right;
 }
 .pic img {
-  width: 200px;
+  width: 400px;
+  height: auto;
 }
 .pic a img {
   height: 45px;
