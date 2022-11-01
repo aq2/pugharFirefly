@@ -51,6 +51,11 @@ function buildWorkshopDetails(shop) {
   $('#date').innerHTML = shop.date + ', ' + shop.time
   // $('#time').innerHTML = shop.time
   // etc
+  let price$ = '<p>£' + shop.singlePrice + ' for individuals, '
+  price$ += '£' + shop.couplePrice + ' for any couple (partner or friend)</p>'
+  price$ += '£' + shop.deposit + ' non-refundable deposit if client cancels'
+  price$ += '<br>Full refund for instructor cancellation'  
+  $('#prices').innerHTML = price$
 
   $('#modalOK').addEventListener('click', (b) => {
     $hide(modal)
