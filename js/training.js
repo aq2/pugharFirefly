@@ -13,9 +13,10 @@ if (aymShops.length == 0) {
 // add table row for each shop
 aymShops.forEach((shop,idx) => {
   let content = ''
-  content += shop.studio.name + ', ' + shop.studio.town 
+  content += shop.date + ', ' + shop.time
   content += '<br>'
-  content += '<br>' + shop.date + ', ' + shop.time
+  content += '<br>' 
+  content += shop.studio.name + ', ' + shop.studio.town 
   content += '<br>'
   content += "<button class='yoga' id=b" + idx
   content += '>more info</button>'
@@ -47,8 +48,8 @@ function buildWorkshopDetails(shop) {
   
   $('#studioName').innerHTML = shop.studio.name
   $('#studioAddress').innerHTML = shop.studio.address
-  $('#date').innerHTML = shop.date
-  $('#time').innerHTML = shop.time
+  $('#date').innerHTML = shop.date + ', ' + shop.time
+  // $('#time').innerHTML = shop.time
   // etc
 
   $('#modalOK').addEventListener('click', (b) => {

@@ -246,8 +246,13 @@ section.training table td {
   flex-direction: column;
   justify-content: space-between;
 }
-.content {
+#modal-content h1 {
+  background: #bd900a;
+  text-align: center;
+}
+#modal-content .content {
   display: flex;
+  flex-grow: 1;
 }
 button#modalOK {
   display: inline-block;

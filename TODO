@@ -2,7 +2,6 @@
 ==================
 
 Todo:
-  ✔ bigger side images @done(31-10-22 14:11)
   ☐ section layouts - use landscape imgs
   ☐ button hover transitions
   ☐ icons on buttons
@@ -10,28 +9,15 @@ Todo:
   ☐ email -> firebase mail -> need google mail data -> + 💩 blaze plan
   ☐ or chase up sendgrid emails?? free tier...through netlify functions
   ☐ style modal betterly
-    ✔ modal dims background @done(31-10-22 20:07)
-  ✔ netlify - seems to be down :sad @done(31-10-22 17:27)
-  ✔ map/filter/reduce! @done(31-10-22 17:27)
-  ✔ get Studios @done(31-10-22 16:09)
-  ✔ no gallery - use images elsewhere @done(31-10-22 15:59)
-  ✔ workshop/training modal @done(31-10-22 15:23)
-  ✔ new repo - pugharfirefly! @done(31-10-22 14:37)
-  ✔ 💡 firepughar compile structure! @done(31-10-22 11:13)
-  ✘ hide firebase config?? @cancelled(31-10-22 13:11)
-  ✔ learn modules import/export malarkey @done(31-10-22 12:42)
-  ✔ radical redesign @done(31-10-22 11:46)
-  ✔ tweak radical @done(31-10-22 11:47)
-
+  ☐ maps AIzaSyDYfQn8EkXjr9wn7CzN1hJc5O7_4h8gB94
+  ☐ firebase hosting -> needs npm
 
 //
 scroller:
-  ✔ position section on switch @done(31-10-22 11:14)
   ☐ position fixed for header/nav?
   ☐ scrolling still raggedy
   ☐ why is aside not sticking?
   ☐ change scroll speeds of aside
-  ✘ fuck scrolling - just start it small in first place! @cancelled(31-10-22 11:13)
 
 //
 
@@ -43,13 +29,10 @@ meeja queeries:
 //
 
 firestore:
-  ✔ need to do lookups for studios, based on ID @done(31-10-22 17:27)
   ☐ don't get expired shops -> date formats??
   ☐ backend for lots of things!
     ☐ add workshops
   ☐ data structures for workshops?
-    ✔ change time from timedate to human friendly strings @done(31-10-22 20:07)
-  ✔ get all yogashops.js @done(31-10-22 14:04)
 
   ☐ get simple CRUD
     ☐ create
@@ -60,13 +43,31 @@ firestore:
 one day:
   ☐ do timetrade substitute
   ☐ netlify -> namecheap? -< 👋 vidahost
-  ✘ header img gallery slider/carousel @cancelled(31-10-22 15:32)
   ☐ fancier intro animations?
-  ✔ bring back the om! @done(31-10-22 15:32)
 
 ================================================
 
 Archive:
+  ✔ change time from timedate to human friendly strings @done(31-10-22 20:07) @project(firestore)
+  ✔ get all yogashops.js @done(31-10-22 14:04) @project(firestore)
+  ✔ netlify - seems to be down :sad @done(31-10-22 17:27) @project(Todo)
+  ✔ map/filter/reduce! @done(31-10-22 17:27) @project(Todo)
+  ✔ get Studios @done(31-10-22 16:09) @project(Todo)
+  ✔ no gallery - use images elsewhere @done(31-10-22 15:59) @project(Todo)
+  ✘ header img gallery slider/carousel @cancelled(31-10-22 15:32) @project(one day)
+  ✔ bring back the om! @done(31-10-22 15:32) @project(one day)
+  ✔ workshop/training modal @done(31-10-22 15:23) @project(Todo)
+  ✔ new repo - pugharfirefly! @done(31-10-22 14:37) @project(Todo)
+  ✔ bigger side images @done(31-10-22 14:11) @project(Todo)
+  ✔ modal dims background @done(31-10-22 20:07) @project(Todo)
+  ✔ learn modules import/export malarkey @done(31-10-22 12:42) @project(Todo)
+  ✔ radical redesign @done(31-10-22 11:46) @project(Todo)
+  ✔ tweak radical @done(31-10-22 11:47) @project(Todo)
+  ✔ position section on switch @done(31-10-22 11:14) @project(scroller)
+  ✔ 💡 firepughar compile structure! @done(31-10-22 11:13) @project(Todo)
+  ✘ hide firebase config?? @cancelled(31-10-22 13:11) @project(Todo)
+  ✘ fuck scrolling - just start it small in first place! @cancelled(31-10-22 11:13) @project(scroller)
+  ✔ need to do lookups for studios, based on ID @done(31-10-22 17:27) @project(firestore)
   ✔ get it working! - clap yourself on the back 😺 @done(30-10-22 17:24) @project(firestore)
   ✔ await @done(30-10-22 17:21) @project(firestore)
   ✔ back to pug includes? needs the old 1,2, but neater code! @done(30-10-22 16:26) @project(Todo)
